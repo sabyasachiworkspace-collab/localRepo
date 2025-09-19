@@ -1,0 +1,133 @@
+*{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            
+            width: 100%;
+            
+
+  font-family: "Oswald", sans-serif;
+  
+  background-repeat: no-repeat;
+  background-origin: right;
+
+  background-position: center;
+  background-size: cover;
+ 
+  position: relative;
+
+  
+  
+  
+        }
+        nav{
+            background-color: black;
+            backdrop-filter: blur(10px);
+            color: white;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 4rem;
+
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            
+
+        }
+        .nav-opt{
+            display: flex;
+
+        }   
+
+        ul li{
+            margin-left: 20px;
+            list-style: none;
+
+        }
+
+        ul li a{
+            color: white;
+            text-decoration: none;
+
+        }
+
+        ul li a:hover{
+            color: aqua;
+            transition: 0.3s;
+        }
+        .container{
+            height: 100vh;
+           background-color:rgba(0, 0, 0, 0.412) ;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+          background-attachment: fixed;
+            background-position: center;
+            background-size: cover ;
+            position: relative;
+
+
+        }
+        .hero-section {
+            background-image: url(mainBackground.jpg);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+
+
+        }
+        .card   {
+            color: white;
+            background-color: rgba(255, 255, 255, 0.099);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.297); 
+            padding: 40px;
+            width: 700px;
+            text-align: center;
+            border-radius: 1rem;
+
+        }
+
+        .card h1{
+            font-size: 40px;
+
+        }
+
+        .card p{
+            font: 18px;
+            line-height: 1.8rem;
+        }
+        .icon{
+            font-size: 1.5rem;
+            display: none !important ;
+        }
+
+        @media (max-width: 636px){
+            nav ul{
+                display: none !important;
+            }
+            .icon{
+                display: flex !important;
+            }
+
+            @media (max-width: 367px){
+                nav h2{
+                 font-size: 1.3rem;
+
+                }
+            }
+        }
